@@ -36,7 +36,7 @@ public class Main {
 
     System.out.println("Задание №3");
     System.out.println("Вариант №1");
-    int money = 500;
+    int money = 1500;
     int count = 0;
     while (money > 0){
         count = count +1;
@@ -54,7 +54,7 @@ public class Main {
     for (; money1 > 0; money1 -= 100){
         count1 = count1 + 1;
         if (count1 % 5 == 0){
-            count1 = count1 + 1;
+            money1 = money1 + 100;
             continue;
         } if (count1 % 5 !=0){
         }
