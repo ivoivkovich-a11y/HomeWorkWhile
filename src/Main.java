@@ -27,7 +27,11 @@ public class Main {
     int distance1 = 0;
     int finish1 = 42195;
     for (; distance1 <= finish1 ; distance1 += 500) {
-        System.out.println("Держитесь! Осталось " + (finish1 - distance1) + " метров");
+        if (distance1 == 0) {
+            continue;
+        } if (distance1 <= finish1) {
+            System.out.println("Держитесь! Осталось " + (finish1 - distance1) + " метров");
+        }
     }
 
     System.out.println("Задание №3");
